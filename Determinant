@@ -18,6 +18,13 @@ abstract class Determinant{
         return result;
     }
 
+    /**
+     * The getSubMatrix method creates a smaller matrix, so a 3x3 matrix would return a 2x2 matrix
+     *
+     * @param matrix The starting matrix
+     * @param column The column to ignore
+     * @return subMatrix The smaller matrix excluding the top row and specified column
+     */
     private static double[][] getSubMatrix(double[][] matrix, int column){
         double[][] subMatrix = new double[matrix.length-1][matrix.length-1];
         int i2=0,j2=0;
